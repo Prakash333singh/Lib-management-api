@@ -20,25 +20,23 @@ This NestJS-based Book Management API provides a robust backend solution for man
 ## Project Structure
 
 ```
-
-├── main.ts # Application entry point
-├── app.module.ts # Root application module
-├── common/ # Shared utilities and cross-cutting concerns
-│ ├── decorators/ # Custom decorators
-│ ├── interceptors/ # Request/response interceptors
-│ └── middleware/ # Request processing middleware
-├── config/ # Configuration files
-│ ├── database.config.ts # Database connection settings
-│ └── configuration.ts # Application configuration
-├── books/ # Book module
-│ ├── book.module.ts # Book module definition
-│ ├── book.controller.ts # HTTP request handlers
-│ ├── book.service.ts # Business logic
-│ ├── schemas/ # Database schemas
-│ ├── dto/ # Data transfer objects
-│ └── interfaces/ # TypeScript interfaces
-└── utils/ # Utility functions
-
+├── main.ts                   # Application entry point
+├── app.module.ts             # Root application module
+├── common/                   # Shared utilities and cross-cutting concerns
+│   ├── decorators/           # Custom decorators
+│   ├── interceptors/         # Request/response interceptors
+│   └── middleware/           # Request processing middleware
+├── config/                   # Configuration files
+│   ├── database.config.ts    # Database connection settings
+│   └── configuration.ts      # Application configuration
+├── books/                    # Book module
+│   ├── book.module.ts        # Book module definition
+│   ├── book.controller.ts    # HTTP request handlers
+│   ├── book.service.ts       # Business logic
+│   ├── schemas/              # Database schemas
+│   ├── dto/                  # Data transfer objects
+│   └── interfaces/           # TypeScript interfaces
+└── utils/                    # Utility functions
 ```
 
 ## Installation
@@ -131,11 +129,12 @@ npm run test:e2e
 ## Swagger UI
 
 You can view the API documentation in Swagger UI. Below is an image of how it looks.
+
 ![swagger image](<Screenshot 2024-12-26 234032.png>)
 
-## Swagger UI Link
+### Swagger UI Link
 
-![Swagger UI](https://lib-management-api-k2qr-hfj1cfft5-prakash333singhs-projects.vercel.app/api)
+[Swagger UI Documentation](https://lib-management-api-k2qr-hfj1cfft5-prakash333singhs-projects.vercel.app/api)
 
 ## Contributing
 
