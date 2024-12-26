@@ -20,23 +20,25 @@ This NestJS-based Book Management API provides a robust backend solution for man
 ## Project Structure
 
 ```
-├── main.ts                   # Application entry point
-├── app.module.ts             # Root application module
-├── common/                   # Shared utilities and cross-cutting concerns
-│   ├── decorators/           # Custom decorators
-│   ├── interceptors/         # Request/response interceptors
-│   └── middleware/           # Request processing middleware
-├── config/                   # Configuration files
-│   ├── database.config.ts    # Database connection settings
-│   └── configuration.ts      # Application configuration
-├── books/                    # Book module
-│   ├── book.module.ts        # Book module definition
-│   ├── book.controller.ts    # HTTP request handlers
-│   ├── book.service.ts       # Business logic
-│   ├── schemas/              # Database schemas
-│   ├── dto/                  # Data transfer objects
-│   └── interfaces/           # TypeScript interfaces
-└── utils/                    # Utility functions
+
+├── main.ts # Application entry point
+├── app.module.ts # Root application module
+├── common/ # Shared utilities and cross-cutting concerns
+│ ├── decorators/ # Custom decorators
+│ ├── interceptors/ # Request/response interceptors
+│ └── middleware/ # Request processing middleware
+├── config/ # Configuration files
+│ ├── database.config.ts # Database connection settings
+│ └── configuration.ts # Application configuration
+├── books/ # Book module
+│ ├── book.module.ts # Book module definition
+│ ├── book.controller.ts # HTTP request handlers
+│ ├── book.service.ts # Business logic
+│ ├── schemas/ # Database schemas
+│ ├── dto/ # Data transfer objects
+│ └── interfaces/ # TypeScript interfaces
+└── utils/ # Utility functions
+
 ```
 
 ## Installation
@@ -60,7 +62,7 @@ Create a `.env` file with the following variables:
 
 ```
 MONGODB_URI=mongodb://localhost:27017/bookdb
-PORT=3000
+PORT=4000
 ```
 
 ## Running the Application
@@ -86,7 +88,8 @@ npm run start:prod
 - `GET /books/:id`: Retrieve a specific book
 - `POST /books`: Create a new book
 - `PATCH /books/:id`: Update an existing book
-- `DELETE /books/:id`: Delete a book -`GET /books/:search`: search a book by author ,title, or genre
+- `DELETE /books/:id`: Delete a book
+- `GET /books/:search`: Search a book by author, title, or genre
 
 ## Features
 
@@ -118,12 +121,19 @@ npm run test:e2e
 
 ## Deployment
 
-Recommended deployment platforms:
+### Vercel Deployment
 
-- Heroku
-- AWS EC2
-- DigitalOcean Droplet
-- Vercel
+- **Error**: The static folder is not being served correctly in the Vercel deployment.
+- **Working Locally**: Everything works fine when running the application locally, but there is an issue in serving the static files after deploying on Vercel.
+- **Other Endpoints**: Other endpoints are working as expected. You can access the API here:  
+  [Library Management API on Vercel](https://lib-management-api-k2qr-hfj1cfft5-prakash333singhs-projects.vercel.app/)
+
+## Swagger UI
+
+You can view the API documentation in Swagger UI. Below is an image of how it looks.
+![swagger image](<Screenshot 2024-12-26 234032.png>)
+
+![Swagger UI](https://lib-management-api-k2qr-hfj1cfft5-prakash333singhs-projects.vercel.app/api)
 
 ## Contributing
 
@@ -167,3 +177,10 @@ MIT License
 For questions or support, please open an issue on GitHub or contact [Your Email].
 
 ---
+
+```
+
+### Key Changes:
+- Added a section for **Vercel Deployment Error** explaining the issue with serving static files.
+- Custom section to add an image of the Swagger UI documentation, with a placeholder link where you can insert the correct URL or image.
+```
