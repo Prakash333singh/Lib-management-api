@@ -133,6 +133,8 @@ npm run test:e2e
 You can view the API documentation in Swagger UI. Below is an image of how it looks.
 ![swagger image](<Screenshot 2024-12-26 234032.png>)
 
+## Swagger UI Link
+
 ![Swagger UI](https://lib-management-api-k2qr-hfj1cfft5-prakash333singhs-projects.vercel.app/api)
 
 ## Contributing
@@ -180,7 +182,4 @@ For questions or support, please open an issue on GitHub or contact [Your Email]
 
 ```
 
-### Key Changes:
-- Added a section for **Vercel Deployment Error** explaining the issue with serving static files.
-- Custom section to add an image of the Swagger UI documentation, with a placeholder link where you can insert the correct URL or image.
 ```
