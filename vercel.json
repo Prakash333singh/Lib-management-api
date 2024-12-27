@@ -8,12 +8,13 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "src/main.js"
+      "src": "/(.*)",
+      "dest": "src/main.js",
+      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS", "HEAD"]
     },
     {
-      "src": "/static/(.*)",
-      "dest": "/public/static/$1"
+      "src": "/(.*)",
+      "dest": "dist/static/$1"
     }
   ]
 }
