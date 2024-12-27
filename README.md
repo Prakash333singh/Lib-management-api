@@ -134,7 +134,7 @@ You can view the API documentation in Swagger UI. Below is an image of how it lo
 
 ### Swagger UI Link
 
-[Swagger UI Documentation](https://lib-management-api-k2qr-hfj1cfft5-prakash333singhs-projects.vercel.app/api)
+[Swagger UI Documentation](https://lib-management-m9fgew9on-prakash333singhs-projects.vercel.app/api)
 
 ## Contributing
 
